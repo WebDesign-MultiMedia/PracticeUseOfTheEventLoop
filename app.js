@@ -90,7 +90,7 @@ let output = document.getElementById('text')
 let titlePrime = document.getElementById('title');
 setTimeout(() => {
     
-    titlePrime.textContent = "Finding numbers betwwen 1 and" + " " + n;
+    titlePrime.textContent = "Finding Prime Numbers betwwen 1 and" + " " + n;
 },2000);
 
 titlePrime.style.textAlign = 'center';
