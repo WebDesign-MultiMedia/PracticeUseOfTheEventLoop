@@ -112,7 +112,7 @@ function primeNum(){
 
         setTimeout(() => {
             output.appendChild(me);
-        },7000);
+        },8000);
 
         me.style.color = 'red';
         me.style.textAlign = 'center';
@@ -123,7 +123,7 @@ function primeNum(){
 
     setTimeout(() => {
         alert("Calculation Completed")
-    }, 8000);
+    }, 7000);
 }
 primeNum(n)
 
