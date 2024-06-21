@@ -69,3 +69,29 @@ function flattenArr(array){
     return result;
 }
 console.log(flattenArr(example));
+
+
+
+
+// PART THREE Deferred Execution
+
+// const text = document.getElementById('text');
+// text.textContent = 'Hi';
+// text.style.fontSize = '2em';
+
+// const center = document.getElementById('box');
+// center.style.textAlign = 'center';
+
+
+
+function primeNum(n){
+
+    for(let i = 0; i <= n; i++){
+       if(i % 2){
+        if(i % 3){
+            console.log(i);
+             }
+    }
+}  }
+primeNum(19)
+
