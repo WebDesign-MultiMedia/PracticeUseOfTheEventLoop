@@ -82,16 +82,38 @@ console.log(flattenArr(example));
 // const center = document.getElementById('box');
 // center.style.textAlign = 'center';
 
+const n = 20;
+let output = document.getElementById('text');
 
+let titlePrime = document.getElementById('title');
+titlePrime.textContent = "Prime numbers betwwen 1 and" + " " + n;
+titlePrime.style.textAlign = 'center';
 
-function primeNum(n){
-
+function primeNum(){
     for(let i = 0; i <= n; i++){
-       if(i % 2){
-        if(i % 3){
-            console.log(i);
-             }
+        flag = true;
+        for(let j = 2; j<= i - 1; j++){
+            if(i % j == 0){
+
+                flag =  false;
+                break
+            }
+        }
+        if(flag){
+        const me = document.createElement('li');
+        let anwwer = (i + " " + 'prime');
+        me.append(anwwer);
+        output.appendChild(me);
+
+        me.style.color = 'red';
+        me.style.textAlign = 'center';
+        me.style.listStyle = 'none';
     }
-}  }
-primeNum(19)
+
+    alert("HI")
+    }
+
+}
+primeNum(n)
+
 
