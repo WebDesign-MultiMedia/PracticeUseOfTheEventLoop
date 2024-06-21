@@ -86,7 +86,12 @@ const n = 20;
 let output = document.getElementById('text');
 
 let titlePrime = document.getElementById('title');
-titlePrime.textContent = "Prime numbers betwwen 1 and" + " " + n;
+
+setTimeout(() => {
+    
+    titlePrime.textContent = "Finding numbers betwwen 1 and" + " " + n;
+},5000);
+
 titlePrime.style.textAlign = 'center';
 
 function primeNum(){
@@ -103,17 +108,23 @@ function primeNum(){
         const me = document.createElement('li');
         let anwwer = (i + " " + 'prime');
         me.append(anwwer);
-        output.appendChild(me);
+
+        setTimeout(() => {
+            output.appendChild(me);
+        },7000);
 
         me.style.color = 'red';
         me.style.textAlign = 'center';
         me.style.listStyle = 'none';
     }
 
-    alert("HI")
     }
 
+    setTimeout(() => {
+        alert("calculation Completed")
+    }, 8000);
 }
 primeNum(n)
+
 
 
