@@ -82,15 +82,16 @@ console.log(flattenArr(example));
 // const center = document.getElementById('box');
 // center.style.textAlign = 'center';
 
-const n = 20;
-let output = document.getElementById('text');
+
+    const n = prompt("Enter a Range Number");
+
+let output = document.getElementById('text')
 
 let titlePrime = document.getElementById('title');
-
 setTimeout(() => {
     
     titlePrime.textContent = "Finding numbers betwwen 1 and" + " " + n;
-},5000);
+},2000);
 
 titlePrime.style.textAlign = 'center';
 
@@ -121,7 +122,7 @@ function primeNum(){
     }
 
     setTimeout(() => {
-        alert("calculation Completed")
+        alert("Calculation Completed")
     }, 8000);
 }
 primeNum(n)
